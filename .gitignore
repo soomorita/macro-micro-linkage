@@ -1,0 +1,33 @@
+# ======= Environments (CRITICAL) =======
+.env
+.env.*
+!.env.example
+
+# ======= Python =======
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ======= Docker =======
+docker-logs/
+*.log
+
+# ======= IDEs & Editors =======
+.vscode/
+.idea/
+*.swp
+
+# ======= OS-specific =======
+.DS_Store
+Thumbs.db
+
+*.csv
+*.json
+!app/core/*.json
