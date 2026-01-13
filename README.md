@@ -57,6 +57,15 @@ graph TD
     FE -->|3. Visualize| PL[Plotly Interactive Charts]
 
 ```
+---
+
+## Dashboard Preview
+
+### 1. Macro-Economic Analysis
+![Macro Analysis Dashboard](macro-micro-linkage_macro-forecast.png)
+
+### 2. Business Impact Simulator
+![Business Simulation Tool](macro-micro-linkage_business-simulator.png)
 
 ---
 
