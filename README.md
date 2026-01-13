@@ -96,9 +96,9 @@ AIトレンドに盲従せず、スモールデータ（月次マクロ統計）
 ```
 
 Where:
-- $(1-L^m)^D$: **Seasonal Integration** (removes seasonality).
-- $\Phi_P(L^m), \Theta_Q(L^m)$: **Seasonal AR/MA components**.
-- Optimized via **Minimizing AIC** (Akaike Information Criterion).
+- $(1-L^m)^D$: **季節性階差** (季節性の除去)
+- $\Phi_P(L^m), \Theta_Q(L^m)$: **季節性自己回帰 (AR)/ 移動平均 (MA) 成分**
+- Optimized via **AIC (赤池情報量基準) の最小化による最適化**
 
 
 #### B. Model Diagnostics (Ljung-Box Test)
@@ -113,9 +113,9 @@ Where:
 - $\hat{\rho}_k$: The sample autocorrelation at lag $k$ (ラグ $k$ における標本自己相関).
 - $h$: The number of lags being tested (検定するラグ数).
 
-**Hypothesis Test:**
-- $H_0$: The residuals are independently distributed (White Noise). **[Model is valid]**
-- $H_1$: The residuals exhibit serial correlation. **[Model needs improvement]**
+**Hypothesis Test 仮説検定（残差の診断）:**
+- $H_0$（帰無仮説）: 残差は独立に分布している（ホワイトノイズ） **[モデルは妥当]**
+- $H_1$（対立仮説）: 残差に自己相関が存在する **[モデルの再検討が必要]**
 
 `EconometricEngine.diagnose()` メソッドは、$`p`$-value を算出し、統計的有意水準（$`\alpha=0.05`$）に基づいてモデルの信頼性を自動判定します。
 
