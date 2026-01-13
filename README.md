@@ -1,4 +1,3 @@
-```markdown
 # Macro-Micro Linkage Platform
 
 > **Bridging the gap between Macroeconomic Volatility and Corporate Profitability.**
@@ -13,7 +12,7 @@
 
 現代の経営環境において、CPI（消費者物価指数）やPPI（企業物価指数）の急激な変動は、もはや無視できない経営リスクです。しかし、多くの企業において、**「マクロ経済の予兆」と「自社のP/L（営業利益）へのインパクト」は分断されています。**
 
-本プロジェクトは、公的統計のリアルタイム解析と計量経済学モデル（SARIMA）を融合させ、インフレリスクを個社の財務インパクトへ「翻訳」します。単なるデータ可視化ではなく、**「未来の不確実性に対する耐久力」を診断するSaaS**のMVPです。
+本プロジェクトは、公的統計のリアルタイム解析と計量経済学モデル（SARIMA）を融合させ、インフレリスクを個社の財務インパクトへ「翻訳」します。単なるデータ可視化ではなく、**「未来の不確実性に対する耐久力」を診断するSaaS**のMVP（Minimum Viable Product）です。
 
 ## Key Value Propositions
 
@@ -118,7 +117,7 @@ Where:
 - $H_0$: The residuals are independently distributed (White Noise). **[Model is valid]**
 - $H_1$: The residuals exhibit serial correlation. **[Model needs improvement]**
 
-`EconometricEngine.diagnose()` メソッドは、$p$-value を算出し、統計的有意水準（$\alpha=0.05$）に基づいてモデルの信頼性を自動判定します。
+`EconometricEngine.diagnose()` メソッドは、$`p`$-value を算出し、統計的有意水準（$`\alpha=0.05`$）に基づいてモデルの信頼性を自動判定します。
 
 #### C. Robust Preprocessing
 
@@ -187,7 +186,6 @@ Access the dashboard at: `http://localhost:8501`
 ### Author
 
 **soomorita**
-*AI Engineer / Econometrician*
 
 ### References
 
@@ -196,7 +194,4 @@ Access the dashboard at: `http://localhost:8501`
 * **Data Source**: [e-Stat API (Portal Site of Official Statistics of Japan)](https://www.e-stat.go.jp/api/)
 * **Library**: [pmdarima: ARIMA estimators for Python](https://alkaline-ml.com/pmdarima/)
 * **Methodology**: Hyndman, R.J., & Athanasopoulos, G. (2018). *Forecasting: Principles and Practice*. OTexts.
-
-```
-
 ```
